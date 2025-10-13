@@ -1,5 +1,5 @@
 # try:
-#     x = 10 / 0
+#     x = 10 / 5
 # except ZeroDivisionError:
 #     print("You can't divide by zero!")
 
@@ -17,21 +17,23 @@
 
 # x = -5
 # if x < 0:
-#     raise ValueError("Negative numbers are not allowed!")
+#     raise ValueError("blhh blahh is not allowed!")
 
 
-class NegativeNumberError(Exception):
-    pass
+# class blahblahblahErro(Exception):
+#     pass
 
-def check_number(num):
-    if num < 0:
-        raise NegativeNumberError("Negative numbers are not allowed!")
+# def check_number(num):
+#     if num < 0:
+#         raise blahblahblahErro("Negative numbers are not allowed!")
 
 
-print(check_number(-10))
+# try: 
+#     check_number(-10) 
+# except blahblahblahErro as e: 
+#     print(e)
 
    
-
 
 
 # print(5 + "hello")  #type error

@@ -109,30 +109,30 @@
 
 # 5. Employee Bonus
 
-# class Employee:
-#     def __init__(self, name, position, salary):
-#         self.name = name
-#         self.position = position
-#         self.salary = salary
+class Employee:
+    def __init__(self, name, position, salary):
+        self.name = name
+        self.position = position
+        self.salary = salary
 
-#     def apply_bonus(self, percentage):
-#         self.salary += self.salary * (percentage / 100)
+    def apply_bonus(self, percentage):
+        self.salary += self.salary * (percentage / 100)
 
-#     def display_info(self):
-#         print(f"Name: {self.name} | Position: {self.position} | Salary: {self.salary}")
+    def display_info(self):
+        print(f"Name: {self.name} | Position: {self.position} | Salary: {self.salary}")
 
-# employees = []
-# for i in range(2):
-#     name = input("Enter name: ")
-#     position = input("Enter position: ")
-#     salary = float(input("Enter salary: "))
-#     emp = Employee(name, position, salary)
-#     bonus = float(input("Enter bonus %: "))
-#     emp.apply_bonus(bonus)
-#     employees.append(emp)
+employees = []
+for i in range(2):
+    name = input("Enter name: ")
+    position = input("Enter position: ")
+    salary = float(input("Enter salary: "))
+    emp = Employee(name, position, salary)
+    bonus = float(input("Enter bonus %: "))
+    emp.apply_bonus(bonus)
+    employees.append(emp)
 
-# for emp in employees:
-#     emp.display_info()
+for emp in employees:
+    emp.display_info()
 
 
 # 6. Shopping Cart
@@ -189,7 +189,7 @@
 #     def __init__(self, name, income, credit_score):
 #         self.name = name
 #         self.income = income
-#         self.credit_score = credit_score
+#         self.credit_score = credit_score  
 
 #     def check_eligibility(self):
 #         if self.income >= 25000 and self.credit_score >= 650:
@@ -213,13 +213,43 @@
 #         self.product_name = product_name
 #         self.status = status
 
+#     def update_status(self, new_status):
+#         self.status = new_status
+
+
+# # Step 1: Add orders
 # orders = []
-# for i in range(2):
+# num_orders = int(input("How many orders do you want to enter? "))
+# for i in range(num_orders):
+#     print(f"\nOrder {i+1}:")
 #     order_id = int(input("Enter order ID: "))
 #     product_name = input("Enter product name: ")
 #     status = input("Enter status: ")
 #     orders.append(Order(order_id, product_name, status))
 
+# # Step 2: Display current orders
+# print("\nCurrent Orders:")
+# for order in orders:
+#     print(f"{order.order_id} - {order.product_name} - {order.status}")
+
+# # Step 3: Optional status update
+# choice = input("\nDo you want to update the status of an order? (yes/no): ").strip().lower()
+# while choice == "yes":
+#     update_id = int(input("Enter the Order ID to update status: "))
+#     found = False
+#     for order in orders:
+#         if order.order_id == update_id:
+#             new_status = input("Enter new status: ")
+#             order.update_status(new_status)
+#             found = True
+#             print("Status updated successfully!")
+#             break
+#     if not found:
+#         print("Order ID not found.")
+
+#     choice = input("\nDo you want to update another order? (yes/no): ").strip().lower()
+
+# # Step 4: Final display of orders
 # print("\nUpdated Orders:")
 # for order in orders:
 #     print(f"{order.order_id} - {order.product_name} - {order.status}")

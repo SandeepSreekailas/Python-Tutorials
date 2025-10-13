@@ -254,21 +254,21 @@
 #     a.speak()
 
 
-from abc import ABC, abstractmethod 
-class Shape(ABC):  # Abstract class 
-    @abstractmethod 
-    def area(self): 
-        pass 
-class Rectangle(Shape): 
-    def __init__(self, width, height): 
-        self.width = width 
-        self.height = height 
-    def area(self): 
-        return self.width * self.height 
-# Cannot instantiate abstract class 
-# shape = Shape()  # TypeError: Can't instantiate abstract class Shape 
-rectangle = Rectangle(10, 20) 
-print(rectangle.area())
+# from abc import ABC, abstractmethod 
+# class Shape(ABC):  # Abstract class 
+#     @abstractmethod 
+#     def area(self): 
+#         pass 
+# class Rectangle(Shape): 
+#     def __init__(self, width, height): 
+#         self.width = width 
+#         self.height = height 
+#     def area(self): 
+#         return self.width * self.height 
+
+# # shape = Shape()  # TypeError: Can't instantiate abstract class Shape 
+# rectangle = Rectangle(10, 20) 
+# print(rectangle.area())
 
 
 # from abc import ABC, abstractmethod  # Import abstract base class module
@@ -327,6 +327,8 @@ print(rectangle.area())
 #         print(f"{self.name} has been destroyed.") 
 # # Creating and destroying objects 
 # p1 = Person("John", 30)  # Output: John has been created. 
+# del p1
+
 
 
 # try:
@@ -348,8 +350,7 @@ print(rectangle.area())
 # print(emp2.company)  # ABC Corp 
 # # Accessing instance variable 
 # print(emp1.name)  
-# print(emp2.name) h
-
+# print(emp2.name) 
 
 # class Employee: 
 #     def __init__(self, name, salary): 
@@ -449,3 +450,4 @@ print(rectangle.area())
 # make_noice(cat)  
 # make_noice(dog)
 # make_noice(cow)
+

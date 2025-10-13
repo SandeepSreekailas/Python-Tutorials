@@ -66,8 +66,7 @@
 
 #Python program that finds both the intersection and union of two sets ?
 
-# set1 = {1, 2, 3, 4, 5}
-# set2 = {3, 4, 5, 6, 7}
+# # set2 = {3, 4, 5, 6, 7}
 
 # intersection = set1.intersection(set2)
 
@@ -77,5 +76,4 @@
 # print("Union of sets:", union)
 
 # while True: 
-#     print("This is an infinite loop") 
-        
+#     print("This is an infinite loo        

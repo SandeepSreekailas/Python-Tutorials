@@ -207,3 +207,16 @@
 #     print(f"{word} is a palindrome.")
 # else:
 #     print(f"{word} is not a palindrome.")
+
+
+def add_sprinkles(func):
+    def wrapper():
+        return func() + " with sprinkles"
+    return wrapper
+
+
+@add_sprinkles
+def get_ice_cream():
+    return "🍦"
+
+print(get_ice_cream())

@@ -8,6 +8,16 @@
 # print(s)
 
 
+# def factorial(n): 
+# # Base case 
+#     if n == 0 or n == 1: 
+#         return 1 
+# # Recursive case 
+#     else: 
+#         return n * factorial(n - 1)
+    
+# print(factorial(5))
+
 # def f(n):
 #         if n == 0 or n == 1:
 #             return 1
@@ -32,8 +42,10 @@
 #         return tail_factorial(n - 1, accumulator * n)
 
 # print(tail_factorial(5))  
-
-
+# 4 -  1 * 5
+# 3 - 5 * 4
+# 2 - 20 * 3
+# 1 - 60 * 2
 
 # def fibonacci(n):
 #     # Base cases
@@ -45,18 +57,17 @@
 #     else:
 #         return fibonacci(n - 1) + fibonacci(n - 2)
 
+# print(fibonacci(6))  
 
-# print(fibonacci(9))  
 
-
-def sum_list(lst):
-    # Base case
-    if not lst:
-        return 0
-    # Recursive case
-    else:
-        return lst[0] + sum_list(lst[1:])
-print(sum_list([1, 2, 3, 4, 5]))  
+# def sum_list(a):
+#     # Base case
+#     if not a:
+#         return 0
+#     # Recursive case
+#     else:
+#         return a[0] + sum_list(a[1:])
+# print(sum_list([1, 2, 3, 4, 5]))  
 
 
 # def iterative_factorial(n): 
